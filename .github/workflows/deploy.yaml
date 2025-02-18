@@ -18,8 +18,12 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - run: ./scripts/export-html.sh
-      - run: ./scripts/export-pdf.sh
+      - uses: docker://marpteam/marp-cli:latest
+        with:
+          args: -I . -O dist
+      - uses: docker://marpteam/marp-cli:latest
+        with:
+          args: -I . -O dist --pdf
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
