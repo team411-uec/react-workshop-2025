@@ -1,0 +1,6 @@
+{
+  "Text Color": {
+    "prefix": "color",
+    "body": ["<font color=\"$1\">$2</font>"],
+  },
+}

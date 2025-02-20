@@ -1,3 +1,36 @@
 /* @theme react-workshop */
 
 @import "default";
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.30.0/dist/tabler-icons.min.css");
+
+footer a {
+  color: inherit;
+}
+
+strong {
+  font-weight: inherit;
+  color: red;
+}
+
+section {
+  font-family: "Noto Sans JP", serif;
+  font-size: 24px;
+}
+
+ul {
+  list-style: square;
+}
+
+ol {
+  list-style: lower-roman;
+}
+
+code {
+  font-family: "Source Code Pro", serif;
+}
+
+p:has(> img[alt~="center"]) {
+  text-align: center;
+}
