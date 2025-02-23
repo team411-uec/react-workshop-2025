@@ -31,6 +31,11 @@ code {
   font-family: "Source Code Pro", serif;
 }
 
-p:has(> img[alt~="center"]) {
-  text-align: center;
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+
+section.small-table table {
+  font-size: 22px;
 }
