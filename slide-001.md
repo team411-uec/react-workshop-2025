@@ -316,4 +316,8 @@ Node.jsは^22、npmは^11のバージョンを前提に説明を行います。
 
 ### Reactが動くか検証
 
-https://github.com/team411-uec/react-scratch
+---
+
+## 参考 TypeScript
+
+[https://typescriptbook.jp/](https://typescriptbook.jp/)
