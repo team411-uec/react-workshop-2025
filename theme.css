@@ -44,6 +44,10 @@ section.small-table table {
   font-size: 22px;
 }
 
+section.small-code code {
+  font-size: 22px;
+}
+
 h1,
 h2,
 h3,
