@@ -264,6 +264,28 @@ function App() {
 
 ---
 
+```jsx
+export function Component2(){
+  const firstName = usePersonStore((state) => state.firstName);
+  const updateFirstName = usePersonStore((state)
+  => state.updateFirstName);
+
+
+  return (
+    <div>
+      <input
+        type="text"
+        value={firstName}
+        onChange={(e) => updateFirstName(e.target.value)}
+      />
+      <p>Hello, {firstName}!</p>
+    </div>
+  );
+}
+```
+
+---
+
 ### Recoil
 
 Deprecatedになったので、非推奨。Reactの開発元のFacebookが開発。
@@ -333,6 +355,8 @@ export const counterSlice = createSlice({
     },
   },
 });
+
+export const { increment, decrement, incrementByAmount } = counterSlice.actions
 ```
 
 ---
